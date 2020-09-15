@@ -81,12 +81,8 @@ open class CalculatorBrains {
     }
 
     fun compute() {
-        Log.i("firstArgStr", firstArgStr + "f")
-        Log.i("secondArgStr", secondArgStr + "s")
-        Log.i("operation", operation)
         if (firstArgStr != "" && secondArgStr != "" && operation != "") {
             Log.i("Compute", "started!")
-            Log.i("Compute 1stArg", firstArgStr)
             firstArgument = firstArgStr.toDouble()
             secondArgument = secondArgStr.toDouble()
             var tmpResult: Double
