@@ -52,6 +52,9 @@ open class CalculatorBrains {
     }
 
     fun digitPressed(buttonId: Int) {
+        if (firstArgStr == "NaN" || firstArgStr == "Infinity") {
+            return
+        }
         var isVeryLong = false
         if (operation == "") {
             if (firstArgStr != "" && firstArgStr.last() != '.') {
