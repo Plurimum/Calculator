@@ -51,8 +51,12 @@ open class CalculatorBrains {
         return tmpNumber
     }
 
+    fun naNOrInfinity(): Boolean {
+        return (firstArgStr == "NaN" || firstArgStr == "Infinity")
+    }
+
     fun digitPressed(buttonId: Int) {
-        if (firstArgStr == "NaN" || firstArgStr == "Infinity") {
+        if (naNOrInfinity()) {
             return
         }
         var isVeryLong = false
@@ -84,6 +88,9 @@ open class CalculatorBrains {
     }
 
     fun compute() {
+        if (naNOrInfinity()) {
+            return
+        }
         if (firstArgStr != "" && secondArgStr != "" && operation != "") {
             Log.i("Compute", "started!")
             firstArgument = firstArgStr.toDouble()
@@ -121,6 +128,9 @@ open class CalculatorBrains {
     }
 
     fun actionPressed(buttonId: Int) {
+        if (naNOrInfinity()) {
+            return
+        }
         when (buttonId) {
             R.id.divide -> {
                 if (operation == "") {
