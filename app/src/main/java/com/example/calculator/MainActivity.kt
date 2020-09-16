@@ -11,20 +11,20 @@ class MainActivity : AppCompatActivity() {
     lateinit var result: TextView
 
     companion object {
-        const val FIRST_ARG_STR_KEY = "KEY of string performance of first arg"
-        const val FIRST_ARG_KEY = "KEY of first arg"
-        const val FIRST_ARG_HAS_DOT_KEY = "KEY of hasDot"
+        const val FIRST_ARG_STR_KEY = "KEY of firstArgStr"
+        const val FIRST_ARG_KEY = "KEY of firstArgument"
+        const val FIRST_ARG_HAS_DOT_KEY = "KEY of firstHasDot"
 
-        const val SECOND_ARG_STR_KEY = "bla bla"
-        const val SECOND_ARG_KEY = "keeeeeyyyyyy"
-        const val SECOND_ARG_HAS_DOT_KEY = "dootttttt"
+        const val SECOND_ARG_STR_KEY = "KEY of secondArgStr"
+        const val SECOND_ARG_KEY = "KEY of secondArgument"
+        const val SECOND_ARG_HAS_DOT_KEY = "KEY of secondHasDot"
 
-        const val OPERATION_KEY = "operation"
+        const val OPERATION_KEY = "KEY of operation"
 
-        const val OUTPUT_STRING_KEY = "screen"
+        const val OUTPUT_STRING_KEY = "KEY of outputString"
     }
 
-    object calculator: CalculatorBrains()
+    object calculator : CalculatorBrains()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
