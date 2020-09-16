@@ -128,7 +128,7 @@ open class CalculatorBrains {
     }
 
     fun actionPressed(buttonId: Int) {
-        if (naNOrInfinity()) {
+        if (naNOrInfinity() && buttonId != R.id.clear) {
             return
         }
         when (buttonId) {
