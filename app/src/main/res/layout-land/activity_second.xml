@@ -1,35 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".MainActivity"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:background="@color/colorBackGround"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/result"
         android:layout_width="match_parent"
         android:layout_height="150sp"
-        android:text="@string/result_text"
         android:layout_gravity="top"
         android:layout_weight="5"
         android:gravity="center"
+        android:text="@string/result_text"
+        android:textColor="@color/colorYellow"
         android:textIsSelectable="true"
-        android:textSize="40sp"/>
+        android:textSize="40sp" />
+
     <TableRow
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
         android:layout_gravity="bottom"
-        >
+        android:layout_weight="1">
+
         <Button
             android:id="@+id/clear"
             android:layout_width="1sp"
             android:layout_height="match_parent"
             android:layout_gravity="top"
             android:layout_weight="1"
+            android:backgroundTint="@color/colorButtons"
             android:text="@string/clear"
+            android:textColor="@color/colorYellow"
             android:textSize="20sp" />
 
         <Button
@@ -38,33 +42,39 @@
             android:layout_height="match_parent"
             android:layout_gravity="top"
             android:layout_weight="2"
+            android:backgroundTint="@color/colorButtons"
             android:text="@string/delete"
+            android:textColor="@color/colorYellow"
             android:textSize="20sp" />
+
         <Button
             android:id="@+id/divide"
             android:layout_width="1sp"
             android:layout_height="match_parent"
             android:layout_gravity="top"
             android:layout_weight="1"
+            android:backgroundTint="@color/colorButtons"
             android:text="@string/divide"
-            android:textSize="20sp"/>
+            android:textColor="@color/colorYellow"
+            android:textSize="20sp" />
     </TableRow>
 
     <TableRow
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
         android:layout_gravity="bottom"
-        >
+        android:layout_weight="1">
+
         <Button
             android:id="@+id/seven"
             android:layout_width="1sp"
             android:layout_height="match_parent"
             android:layout_gravity="start"
             android:layout_weight="1"
+            android:backgroundTint="@color/colorButtons"
             android:text="@string/seven"
-            android:textSize="20sp"
-            />
+            android:textColor="@color/colorYellow"
+            android:textSize="20sp" />
 
         <Button
             android:id="@+id/eight"
@@ -73,7 +83,10 @@
             android:layout_gravity="top"
             android:layout_weight="1"
             android:text="@string/eight"
-            android:textSize="20sp"/>
+            android:textSize="20sp"
+            android:backgroundTint="@color/colorButtons"
+            android:textColor="@color/colorYellow"/>
+
         <Button
             android:id="@+id/nine"
             android:layout_width="1sp"
@@ -81,7 +94,10 @@
             android:layout_gravity="top"
             android:layout_weight="1"
             android:text="@string/nine"
-            android:textSize="20sp"/>
+            android:textSize="20sp"
+            android:backgroundTint="@color/colorButtons"
+            android:textColor="@color/colorYellow" />
+
         <Button
             android:id="@+id/multiply"
             android:layout_width="1sp"
@@ -89,15 +105,17 @@
             android:layout_gravity="top"
             android:layout_weight="1"
             android:text="@string/multiply"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:backgroundTint="@color/colorButtons"
+            android:textColor="@color/colorYellow" />
     </TableRow>
 
     <TableRow
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
         android:layout_gravity="bottom"
-        >
+        android:layout_weight="1">
+
         <Button
             android:id="@+id/four"
             android:layout_width="1sp"
@@ -106,7 +124,8 @@
             android:layout_weight="1"
             android:text="@string/four"
             android:textSize="20sp"
-            />
+            android:backgroundTint="@color/colorButtons"
+            android:textColor="@color/colorYellow" />
 
         <Button
             android:id="@+id/five"
@@ -115,7 +134,10 @@
             android:layout_gravity="top"
             android:layout_weight="1"
             android:text="@string/five"
-            android:textSize="20sp"/>
+            android:textSize="20sp"
+            android:backgroundTint="@color/colorButtons"
+            android:textColor="@color/colorYellow" />
+
         <Button
             android:id="@+id/six"
             android:layout_width="1sp"
@@ -123,7 +145,10 @@
             android:layout_gravity="top"
             android:layout_weight="1"
             android:text="@string/six"
-            android:textSize="20sp"/>
+            android:textSize="20sp"
+            android:backgroundTint="@color/colorButtons"
+            android:textColor="@color/colorYellow" />
+
         <Button
             android:id="@+id/subtract"
             android:layout_width="1sp"
@@ -131,15 +156,17 @@
             android:layout_gravity="top"
             android:layout_weight="1"
             android:text="@string/subtract"
-            android:textSize="20sp"/>
+            android:textSize="20sp"
+            android:backgroundTint="@color/colorButtons"
+            android:textColor="@color/colorYellow" />
     </TableRow>
 
     <TableRow
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
         android:layout_gravity="bottom"
-        >
+        android:layout_weight="1">
+
         <Button
             android:id="@+id/one"
             android:layout_width="1sp"
@@ -148,7 +175,8 @@
             android:layout_weight="1"
             android:text="@string/one"
             android:textSize="20sp"
-            />
+            android:backgroundTint="@color/colorButtons"
+            android:textColor="@color/colorYellow" />
 
         <Button
             android:id="@+id/two"
@@ -157,7 +185,10 @@
             android:layout_gravity="top"
             android:layout_weight="1"
             android:text="@string/two"
-            android:textSize="20sp"/>
+            android:textSize="20sp"
+            android:backgroundTint="@color/colorButtons"
+            android:textColor="@color/colorYellow" />
+
         <Button
             android:id="@+id/three"
             android:layout_width="1sp"
@@ -165,7 +196,10 @@
             android:layout_gravity="top"
             android:layout_weight="1"
             android:text="@string/three"
-            android:textSize="20sp"/>
+            android:textSize="20sp"
+            android:backgroundTint="@color/colorButtons"
+            android:textColor="@color/colorYellow" />
+
         <Button
             android:id="@+id/add"
             android:layout_width="1sp"
@@ -173,14 +207,16 @@
             android:layout_gravity="top"
             android:layout_weight="1"
             android:text="@string/add"
-            android:textSize="20sp"/>
+            android:textSize="20sp"
+            android:backgroundTint="@color/colorButtons"
+            android:textColor="@color/colorYellow" />
     </TableRow>
 
     <TableRow
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        >
+        android:layout_weight="1">
+
         <Button
             android:id="@+id/zero"
             android:layout_width="2sp"
@@ -189,7 +225,8 @@
             android:layout_weight="2"
             android:text="@string/zero"
             android:textSize="20sp"
-            />
+            android:backgroundTint="@color/colorButtons"
+            android:textColor="@color/colorYellow" />
 
         <Button
             android:id="@+id/dot"
@@ -198,7 +235,10 @@
             android:layout_gravity="top"
             android:layout_weight="1"
             android:text="@string/comma"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:backgroundTint="@color/colorButtons"
+            android:textColor="@color/colorYellow" />
+
         <Button
             android:id="@+id/equal"
             android:layout_width="1sp"
@@ -206,7 +246,9 @@
             android:layout_gravity="top"
             android:layout_weight="1"
             android:text="@string/equal"
-            android:textSize="20sp"/>
+            android:textSize="20sp"
+            android:backgroundTint="@color/colorButtons"
+            android:textColor="@color/colorYellow" />
     </TableRow>
 
 </LinearLayout>
