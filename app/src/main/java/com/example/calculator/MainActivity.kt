@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_second)
+        setContentView(R.layout.activity_main)
 
         result = findViewById(R.id.result)
 
@@ -87,16 +87,12 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        Log.i("digitButtons", "initialazed!")
-
         for (i in actionIds.indices) {
             actionButtons[i].setOnClickListener {
                 calculator.actionPressed(actionIds[i])
                 result.text = calculator.outputString
             }
         }
-
-        Log.i("actionButtons", "initialazed!")
     }
 
     override fun onSaveInstanceState(outState: Bundle) {
